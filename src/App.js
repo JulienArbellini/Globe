@@ -1,11 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Globe from 'react-globe.gl';
 
-// Palette pour différencier les pays
-function getColor(index) {
-  const hue = (index * 137.508) % 360; // angle d'or pour couleurs distinctes
-  return `hsl(${hue}, 70%, 60%)`;
-}
 
 function App() {
   const globeRef = useRef();
