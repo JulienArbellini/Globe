@@ -145,12 +145,12 @@ useEffect(() => {
         polygonGeoJsonGeometry="geometry"
         polygonLabel={d => d?.properties?.ADMIN || ''}
         polygonAltitude={d =>
-          d.properties.ADM0_A3 === hoverCountry ? 0.15 : 0.05
+          d.properties.ADM0_A3 === hoverCountry ? 0.05 : 0.01
         }
         polygonCapColor={d =>
           d.properties.ADM0_A3 === hoverCountry
             ? 'rgba(233,196,106,0.95)'
-            : 'rgba(255,255,255,0.36)'
+            : 'rgba(255,255,255,0.16)'
         }
         polygonSideColor={d =>
           d.properties.ADM0_A3 === hoverCountry
